@@ -145,122 +145,72 @@ div.text-wrapper {
     display: inline-block;
 }
 div.coop {
-    background-color: #ffc000;
+    background-color: #e7491e;
     text-align: left;
     border-right-style: solid;
 }
 div.comp {
-    background-color: #a05000;
+    background-color: #feff21;
     text-align: right;
     border-left-style: solid;
 }
 div.regu {
-    background-color: #50c075;
+    background-color: #79002c;
     text-align: left;
     border-right-style: solid;
 }
 div.dema {
-    background-color: #5000c0;
+    background-color: #f17a79;
     text-align: right;
     border-left-style: solid;
 }
 div.cent {
-    background-color: #757575;
+    background-color: #26366d;
     text-align: left;
     border-right-style: solid;
 }
 div.dece {
-    background-color: #00c0a0;
+    background-color: #eb6419;
     text-align: right;
     border-left-style: solid;
 }
 div.equi {
-    background-color: #0075ff;
+    background-color: #bc1643;
     text-align: left;
     border-right-style: solid;
 }
 div.ince {
-    background-color: #ffff00;
+    background-color: #f8c70a;
     text-align: right;
     border-left-style: solid;
 }
-div.stat {
-    background-color: #50c000;
+div.hori {
+    background-color: #f19112;
     text-align: left;
     border-right-style: solid;
 }
-div.libe {
-    background-color: #ffa000;
+div.hier {
+    background-color: #a52300;
     text-align: right;
     border-left-style: solid;
 }
-div.land {
-    background-color: #c0c0c0;
+div.comm {
+    background-color: #8a5d3c;
     text-align: left;
     border-right-style: solid;
 }
-div.geor {
-    background-color: #c0e000;
+div.rent {
+    background-color: #e30015;
     text-align: right;
     border-left-style: solid;
 }
-div.anti {
-    background-color: #c02500;
+div.oppo {
+    background-color: #f2f268;
     text-align: left;
     border-right-style: solid;
 }
-div.reli {
-    background-color: #c000ff;
-    text-align: right;
-    border-left-style: solid;
-}
-div.glob {
-    background-color: #00e0ff;
-    text-align: left;
-    border-right-style: solid;
-}
-div.nati {
-    background-color: #e07500;
-    text-align: right;
-    border-left-style: solid;
-}
-div.inte {
-    background-color: #ff7575;
-    text-align: left;
-    border-right-style: solid;
-}
-div.isol {
-    background-color: #2575e0;
-    text-align: right;
-    border-left-style: solid;
-}
-div.acce {
-    background-color: #5000e0;
-    text-align: left;
-    border-right-style: solid;
-}
-div.dece {
-    background-color: #c0c000;
-    text-align: right;
-    border-left-style: solid;
-}
-div.elit {
-    background-color: #e000e0;
-    text-align: left;
-    border-right-style: solid;
-}
-div.popu {
-    background-color: #75c025;
-    text-align: right;
-    border-left-style: solid;
-}
-div.disu {
-    background-color: #c05050;
-    text-align: left;
-    border-right-style: solid;
-}
-div.righ {
-    background-color: #00c000;
+div.inhe {
+    background-color: #7d297e;
     text-align: right;
     border-left-style: solid;
 }
