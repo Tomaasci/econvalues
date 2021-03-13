@@ -252,23 +252,23 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#79002c"
         ctx.fillRect(120, 184, 5.6*regu-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#603000"
         ctx.fillRect(682-5.6*exte, 184, 5.6*exte-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#a0a0c0"
         ctx.fillRect(120, 304, 5.6*auto-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#c050ff"
         ctx.fillRect(682-5.6*empl, 304, 5.6*empl-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#f17a79"
         ctx.fillRect(120, 424, 5.6*dema-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#ffa050"
         ctx.fillRect(682-5.6*pate, 424, 5.6*pate-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#bc1643"
         ctx.fillRect(120, 544, 5.6*equi-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#feff21"
         ctx.fillRect(682-5.6*comp, 544, 5.6*comp-2, 72)
-        ctx.fillStyle="#000000"
+        ctx.fillStyle="#26366d"
         ctx.font="700 60px Montserrat"
         ctx.textAlign="left"
         ctx.fillText("EconValues", 20, 90)
@@ -280,11 +280,19 @@ stats"></a></div></noscript>
         if (auto > 30) {ctx.fillText(auto + "%", 130, 357.5)}
         if (dema > 30) {ctx.fillText(dema + "%", 130, 477.5)}
         if (equi > 30) {ctx.fillText(equi + "%", 130, 597.5)}
+        if (cent > 30) {ctx.fillText(cent + "%", 130, 717.5)}
+        if (hori > 30) {ctx.fillText(hori + "%", 130, 837.5)}
+        if (comm > 30) {ctx.fillText(comm + "%", 130, 957.5)}
+        if (prot > 30) {ctx.fillText(prot + "%", 130, 1077.5)}
         ctx.textAlign="right"
         if (exte > 30) {ctx.fillText(exte + "%", 670, 237.5)}
         if (empl > 30) {ctx.fillText(empl + "%", 670, 357.5)}
         if (pate > 30) {ctx.fillText(pate + "%", 670, 477.5)}
         if (comp > 30) {ctx.fillText(comp + "%", 670, 597.5)}
+        if (loca > 30) {ctx.fillText(loca + "%", 670, 717.5)}
+        if (hier > 30) {ctx.fillText(hier + "%", 670, 837.5)}
+        if (rent > 30) {ctx.fillText(rent + "%", 670, 957.5)}
+        if (glob > 30) {ctx.fillText(glob + "%", 670, 1077.5)}
 
         ctx.textAlign="center"
         ctx.fillText(" Axis: " + document.getElementById("bregu").innerHTML, 400, 175)
