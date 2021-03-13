@@ -144,33 +144,33 @@ div.text-wrapper {
     color: #000000;
     display: inline-block;
 }
-div.coop {
-    background-color: #e7491e;
-    text-align: left;
-    border-right-style: solid;
-}
-div.comp {
-    background-color: #feff21;
-    text-align: right;
-    border-left-style: solid;
-}
 div.regu {
     background-color: #79002c;
     text-align: left;
     border-right-style: solid;
 }
-div.dema {
-    background-color: #f17a79;
+div.exte {
+    background-color: #603000;
     text-align: right;
     border-left-style: solid;
 }
-div.cent {
-    background-color: #26366d;
+div.auto {
+    background-color: #a0a0c0;
     text-align: left;
     border-right-style: solid;
 }
-div.dece {
-    background-color: #eb6419;
+div.empl {
+    background-color: #c050ff;
+    text-align: right;
+    border-left-style: solid;
+}
+div.dema {
+    background-color: #f17a79;
+    text-align: left;
+    border-right-style: solid;
+}
+div.pate {
+    background-color: #ffa050;
     text-align: right;
     border-left-style: solid;
 }
@@ -179,8 +179,18 @@ div.equi {
     text-align: left;
     border-right-style: solid;
 }
-div.ince {
-    background-color: #f8c70a;
+div.comp {
+    background-color: #feff21;
+    text-align: right;
+    border-left-style: solid;
+}
+div.cent {
+    background-color: #26366d;
+    text-align: left;
+    border-right-style: solid;
+}
+div.loca {
+    background-color: #eb6419;
     text-align: right;
     border-left-style: solid;
 }
@@ -204,13 +214,13 @@ div.rent {
     text-align: right;
     border-left-style: solid;
 }
-div.oppo {
-    background-color: #f2f268;
+div.prot {
+    background-color: #7575ff;
     text-align: left;
     border-right-style: solid;
 }
-div.inhe {
-    background-color: #7d297e;
+div.glob {
+    background-color: #00c0e0;
     text-align: right;
     border-left-style: solid;
 }
