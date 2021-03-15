@@ -130,7 +130,7 @@ questions = [
         }
     },
     {
-        "question": "Efficiency can only be achieved through mass mecanisation.",
+        "question": "Repetitive work should be done by machines.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -143,7 +143,7 @@ questions = [
         }
     },
     {
-        "question": "The fordist model, where high incomes boost demand, works the best.",
+        "question": "Hand made products are usually of a better quality than machine made alternatives.",
         "effect": {
             "bregu": 0,
             "btech": -10,
@@ -169,7 +169,7 @@ questions = [
         }
     },
     {
-        "question": "Artisanal production is preferable.",
+        "question": "Productivity is not as important than providing jobs.",
         "effect": {
             "bregu": 0,
             "btech": -10,
@@ -182,7 +182,7 @@ questions = [
         }
     },
     {
-        "question": "We must accept that new technologies make obsolete most of the workers.",
+        "question": "Unemployment caused by technology can be a good thing, as people will have to work fewer hours.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -195,7 +195,7 @@ questions = [
         }
     },
     {
-        "question": "Luddites' actions should be repeated against excessive automation.",
+        "question": "We should try to achieve full employment.",
         "effect": {
             "bregu": 0,
             "btech": -10,
@@ -208,7 +208,7 @@ questions = [
         }
     },
     {
-        "question": "Jobs done mechanically are often of better quality.",
+        "question": "We should aim to achieve an automated economy as fast as possible.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -221,7 +221,7 @@ questions = [
         }
     },
     {
-        "question": "Productivity is less important than providing jobs.",
+        "question": "Humans will always want to work.",
         "effect": {
             "bregu": 0,
             "btech": -10,
@@ -234,7 +234,7 @@ questions = [
         }
     },
     {
-        "question": "An economy where everything is produced by machines is a goal to thrive for.",
+        "question": "In the future, all the work people don’t want to do will be mechanised.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -247,7 +247,7 @@ questions = [
         }
     },
     {
-        "question": "Unemployment is a big problem that must be solved.",
+        "question": "Machines should be destroyed to prevent workers losing their jobs.",
         "effect": {
             "bregu": 0,
             "btech": -10,
