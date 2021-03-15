@@ -26,7 +26,7 @@ questions = [
         }
     },
     {
-        "question": "There should be regulations to prevent the overuse of antibiotics.",
+        "question": "Laws should be in place to ensure the ingredients of food items are available to consumers.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -780,7 +780,7 @@ questions = [
         }
     },
     {
-        "question": "Landlords give nothing of value to the economy.",
+        "question": "People have a right to occupy and use unused land, even if it’s owned by someone.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -793,7 +793,7 @@ questions = [
         }
     },
     {
-        "question": "Rents are a totally acceptable way of gaining income.",
+        "question": "If someone is first to claim an area of land, they are entitled to profit from it.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -806,7 +806,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Rent is a form of theft.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -819,7 +819,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Landlords provide an essential service.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -832,7 +832,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "The land belongs to the people.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -845,7 +845,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Land should not be taxed.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -858,7 +858,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Nobody should profit from natural resources which they didn’t earn.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -871,7 +871,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "The right to own property is absolute.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -884,7 +884,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "We should consider implementing a land value tax.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -897,7 +897,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Without property rights, there are no rights at all.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -910,7 +910,7 @@ questions = [
         }
     },
     {
-        "question": "National resources should stay within our borders.",
+        "question": "Our national resources should not leave our borders.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -923,7 +923,7 @@ questions = [
         }
     },
     {
-        "question": "The path to economic success involves trade with other countries.",
+        "question": "There should be a free flow of labour and capital between nations.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -936,7 +936,7 @@ questions = [
         }
     },
     {
-        "question": "Delocalising industry for cheap labor ends up with losses in the long term.",
+        "question": "We should prevent jobs being outsourced overseas.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -949,7 +949,7 @@ questions = [
         }
     },
     {
-        "question": "We should have an international trade based economy.",
+        "question": "Tariffs should be lowered if not removed entirely.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -962,7 +962,7 @@ questions = [
         }
     },
     {
-        "question": "I support some sort of autarky or other model of self sufficiency.",
+        "question": "Our nation should not have to depend on the outside world for resources.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -975,7 +975,7 @@ questions = [
         }
     },
     {
-        "question": "Products only available in foreign countries should be imported.",
+        "question": "International trade is essential to any modern economy.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -988,7 +988,7 @@ questions = [
         }
     },
     {
-        "question": "We should limit importations in order to not contract a debt.",
+        "question": "We should limit our imports to avoid debt.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -1001,7 +1001,7 @@ questions = [
         }
     },
     {
-        "question": "Any tentative of closing an economy always lead to all sorts of penuries.",
+        "question": "Developed nations should help developing nations to grow.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -1014,7 +1014,7 @@ questions = [
         }
     },
     {
-        "question": "We should impose regulations on international companies to protect national businesses.",
+        "question": "We have a duty to buy from domestic businesses instead of foreign ones.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -1027,7 +1027,7 @@ questions = [
         }
     },
     {
-        "question": "Tariffs should be kept minimal, if not totally removed.",
+        "question": "The global economy is more important than our national economy.",
         "effect": {
             "bregu": 0,
             "btech": 0,
