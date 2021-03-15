@@ -520,7 +520,7 @@ questions = [
         }
     },
     {
-        "question": "Uniting similar sectors can only be beneficial in the long term.",
+        "question": "Certain services like roads and public transportation should be run by the government.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -533,7 +533,7 @@ questions = [
         }
     },
     {
-        "question": "Local merchants know more than anyone else what people really want.",
+        "question": "Monopolies should be avoided at all costs.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -546,7 +546,7 @@ questions = [
         }
     },
     {
-        "question": "Resources should be spread equally countrywide.",
+        "question": "Decentralised economies are inefficient.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -559,7 +559,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "The government and big businesses collude to stomp out small scale enterprises.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -572,7 +572,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Counterfeit currency is a big problem.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -585,7 +585,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Big companies should be broken up into smaller ones.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -598,7 +598,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "A command economy would be a good idea.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -611,7 +611,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "There should be no central bank.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -624,7 +624,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "A strong government is necessary during times of crisis.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -637,7 +637,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Government sponsored monopolies are a big problem.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -645,32 +645,6 @@ questions = [
             "bince": 0,
             "bcent": -10,
             "bstru": 0,
-            "bland": 0,
-            "btrad": 0,
-        }
-    },
-    {
-        "question": "Ideally, the workers should own the means of production.",
-        "effect": {
-            "bregu": 0,
-            "btech": 0,
-            "binte": 0,
-            "bince": 0,
-            "bcent": 0,
-            "bstru": 10,
-            "bland": 0,
-            "btrad": 0,
-        }
-    },
-    {
-        "question": "Strong leadership is needed to ensure efficiency.",
-        "effect": {
-            "bregu": 0,
-            "btech": 0,
-            "binte": 0,
-            "bince": 0,
-            "bcent": 0,
-            "bstru": -10,
             "bland": 0,
             "btrad": 0,
         }
@@ -689,7 +663,7 @@ questions = [
         }
     },
     {
-        "question": "Slavery had multiple advantages.",
+        "question": "The workplace should be more democratic.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -702,7 +676,33 @@ questions = [
         }
     },
     {
-        "question": "Employers should be elected by the workers.",
+        "question": "Some people are better suited to make economic decisions than others.",
+        "effect": {
+            "bregu": 0,
+            "btech": 0,
+            "binte": 0,
+            "bince": 0,
+            "bcent": 0,
+            "bstru": 10,
+            "bland": 0,
+            "btrad": 0,
+        }
+    },
+    {
+        "question": "Co-operatives are better than traditional business models.",
+        "effect": {
+            "bregu": 0,
+            "btech": 0,
+            "binte": 0,
+            "bince": 0,
+            "bcent": 0,
+            "bstru": -10,
+            "bland": 0,
+            "btrad": 0,
+        }
+    },
+    {
+        "question": "Bosses usually know what’s best for their workers.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -728,7 +728,7 @@ questions = [
         }
     },
     {
-        "question": "The workers should be able to participate in business decisions.",
+        "question": "The economy should be run by and for the working class.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -741,7 +741,7 @@ questions = [
         }
     },
     {
-        "question": "Employers should have the power of the final decision on everything.",
+        "question": "Hierarchical workplaces work best.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -754,7 +754,7 @@ questions = [
         }
     },
     {
-        "question": "Work is best done when free from any form of constraint.",
+        "question": "Class should be abolished.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -767,7 +767,7 @@ questions = [
         }
     },
     {
-        "question": "When the workplace is highly hierarchised, we ensure the work is of quality.",
+        "question": "Slave labour is justified if it’s productive enough.",
         "effect": {
             "bregu": 0,
             "btech": 0,
