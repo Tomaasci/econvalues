@@ -390,7 +390,7 @@ questions = [
         }
     },
     {
-        "question": "Strong welfare systems should exist to support the poor.",
+        "question": "A strong welfare state should exist to support the poor.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -403,7 +403,7 @@ questions = [
         }
     },
     {
-        "question": "Excessive taxes harm the economy more than anything else.",
+        "question": "The minimum wage should be abolished.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -416,7 +416,7 @@ questions = [
         }
     },
     {
-        "question": "Compassion towards the ones in need is more relevant than staying competitive.",
+        "question": "Universal basic income is a good idea.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -429,7 +429,7 @@ questions = [
         }
     },
     {
-        "question": "Poverty is justified for people that don't want to work.",
+        "question": "A flat tax is preferable to a progressive tax.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -442,7 +442,7 @@ questions = [
         }
     },
     {
-        "question": "Charity is often too reduced to apport any major changes.",
+        "question": "Healthcare should be free.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -455,7 +455,7 @@ questions = [
         }
     },
     {
-        "question": "Workers should be paid according to their productivity.",
+        "question": "Workers should be payed according to their productivity.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -468,7 +468,7 @@ questions = [
         }
     },
     {
-        "question": "We should thrive towards some sort of universal basic income.",
+        "question": "Taxes should be raised on the rich to provide for the poor.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -481,7 +481,7 @@ questions = [
         }
     },
     {
-        "question": "Since entrepreneurs started their business, they should keep the profit.",
+        "question": "Those who are able to work, but choose not to, should starve.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -494,7 +494,7 @@ questions = [
         }
     },
     {
-        "question": "A minimal legal wage should be implemented.",
+        "question": "We must make sure everyone has enough to live, even if that negatively affects the economy.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -507,7 +507,7 @@ questions = [
         }
     },
     {
-        "question": "Some form of social darwinism is justified in order to be prosperous.",
+        "question": "Some level of inequality is necessary for society to function.",
         "effect": {
             "bregu": 0,
             "btech": 0,
