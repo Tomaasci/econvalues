@@ -1,6 +1,6 @@
 questions = [
     {
-        "question": "Excessive pollution should be illegal.",
+        "question": "People who litter should be fined.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -13,7 +13,7 @@ questions = [
         }
     },
     {
-        "question": "Adhocracy is preferable to bureaucracy.",
+        "question": "The government should either sell off national parks, or use them for something more productive.",
         "effect": {
             "bregu": -10,
             "btech": 0,
@@ -26,7 +26,7 @@ questions = [
         }
     },
     {
-        "question": "There is industry that shouldn't be left to private owners.",
+        "question": "There should be regulations to prevent the overuse of antibiotics.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -39,7 +39,7 @@ questions = [
         }
     },
     {
-        "question": "The existence of a stock market is justified.",
+        "question": "There should be no restrictions on how loud people can be at night.",
         "effect": {
             "bregu": -10,
             "btech": 0,
@@ -52,7 +52,7 @@ questions = [
         }
     },
     {
-        "question": "Some dangerous economic practices should be outlawed.",
+        "question": "We should introduce a carbon tax.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -65,7 +65,7 @@ questions = [
         }
     },
     {
-        "question": "Complicating business affairs with regulations has no place in our economy.",
+        "question": "Smoking should be legal, even in public buildings.",
         "effect": {
             "bregu": -10,
             "btech": 0,
@@ -78,7 +78,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "We should subsidise research which benefits the economy.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -87,11 +87,11 @@ questions = [
             "bcent": 0,
             "bstru": 0,
             "bland": 0,
-            "btrad": 0,pp
+            "btrad": 0,
         }
     },
     {
-        "question": "",
+        "question": "Pollution is the price we pay for progress.",
         "effect": {
             "bregu": -10,
             "btech": 0,
@@ -104,7 +104,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Vaccines should be free.",
         "effect": {
             "bregu": 10,
             "btech": 0,
@@ -117,7 +117,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "The government should not place environmental restrictions on companies.",
         "effect": {
             "bregu": -10,
             "btech": 0,
@@ -208,7 +208,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Jobs done mechanically are often of better quality.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -234,7 +234,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "An economy where everything is produced by machines is a goal to thrive for.",
         "effect": {
             "bregu": 0,
             "btech": 10,
@@ -260,7 +260,7 @@ questions = [
         }
     },
     {
-        "question": "Companies are the best suited to decide what should be produced.",
+        "question": "A market mechanism is the best way to distribute resources.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -273,7 +273,7 @@ questions = [
         }
     },
     {
-        "question": "Forcing industry to make a certain amount of basic resources is needed in order to avoid penuries.",
+        "question": "We should implement a sugar tax.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -286,7 +286,7 @@ questions = [
         }
     },
     {
-        "question": "Markets are totally able to fullify both basic needs and luxury wants.",
+        "question": "Counter economic movements such as agorism are often in the right.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -299,7 +299,7 @@ questions = [
         }
     },
     {
-        "question": "Hard drugs and similar substances should be removed from the legal market.",
+        "question": "Black markets should be stamped out.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -312,7 +312,7 @@ questions = [
         }
     },
     {
-        "question": "Counter economic movements such as agorism are often right.",
+        "question": "Individuals know what’s best for themselves.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -325,7 +325,7 @@ questions = [
         }
     },
     {
-        "question": "People should learn to live with what they already have.",
+        "question": "It’s sad to see that many people buy bottled water when fresh tap water is available to them.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -338,7 +338,7 @@ questions = [
         }
     },
     {
-        "question": "We are in no right to deny demand for products from consumers.",
+        "question": "Most of the time, supply and demand will make sure prices are fair.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -351,7 +351,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Drug dealers should be punished.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -364,7 +364,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Consumerism can be and often is a good thing.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -377,7 +377,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "People should learn to live with what they have.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -416,7 +416,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Compassion towards the ones in need is more relevant than staying competitive.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -442,7 +442,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Charity is often too reduced to apport any major changes.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -468,7 +468,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "We should thrive towards some sort of universal basic income.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -494,7 +494,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "A minimal legal wage should be implemented.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -507,7 +507,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Some form of social darwinism is justified in order to be prosperous.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -546,7 +546,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Resources should be spread equally countrywide.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -650,7 +650,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Ideally, the workers should own the means of production.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -741,7 +741,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Employers should have the power of the final decision on everything.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -754,7 +754,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Work is best done when free from any form of constraint.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -767,7 +767,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "When the workplace is highly hierarchised, we ensure the work is of quality.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -793,7 +793,7 @@ questions = [
         }
     },
     {
-        "question": "",
+        "question": "Rents are a totally acceptable way of gaining income.",
         "effect": {
             "bregu": 0,
             "btech": 0,
