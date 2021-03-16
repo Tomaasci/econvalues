@@ -663,7 +663,7 @@ questions = [
         }
     },
     {
-        "question": "The workplace should be more democratic.",
+        "question": "It is natural that some people should hold more economic power than others.",
         "effect": {
             "bregu": 0,
             "btech": 0,
@@ -671,6 +671,19 @@ questions = [
             "bince": 0,
             "bcent": 0,
             "bstru": -10,
+            "bland": 0,
+            "btrad": 0,
+        }
+    },
+    {
+        "question": "The workplace should be more democratic.",
+        "effect": {
+            "bregu": 0,
+            "btech": 0,
+            "binte": 0,
+            "bince": 0,
+            "bcent": 0,
+            "bstru": 10,
             "bland": 0,
             "btrad": 0,
         }
@@ -683,7 +696,7 @@ questions = [
             "binte": 0,
             "bince": 0,
             "bcent": 0,
-            "bstru": 10,
+            "bstru": -10,
             "bland": 0,
             "btrad": 0,
         }
@@ -696,26 +709,13 @@ questions = [
             "binte": 0,
             "bince": 0,
             "bcent": 0,
-            "bstru": -10,
-            "bland": 0,
-            "btrad": 0,
-        }
-    },
-    {
-        "question": "Bosses usually know what’s best for their workers.",
-        "effect": {
-            "bregu": 0,
-            "btech": 0,
-            "binte": 0,
-            "bince": 0,
-            "bcent": 0,
             "bstru": 10,
             "bland": 0,
             "btrad": 0,
         }
     },
     {
-        "question": "If left alone, the workers will always seek for inefficient pauses.",
+        "question": "Bosses usually know what’s best for their workers.",
         "effect": {
             "bregu": 0,
             "btech": 0,
