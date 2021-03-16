@@ -13,55 +13,16 @@ ideologies = [
         }
     },
     {
-        "name": "Quarkism",
+        "name": "Luxury Communism",
         "stats": {
-            "bregu": 60,
-            "btech": 75,
-            "binte": 20,
-            "bince": 25,
-            "bcent": 70,
-            "bstru": 60,
-            "bland": 40,
-            "btrad": 90,
-        }
-    },
-    {
-        "name": "FALGSC",
-        "stats": {
-            "bregu": 100,
+            "bregu": 90,
             "btech": 100,
-            "binte": 100,
+            "binte": 70,
             "bince": 100,
-            "bcent": 100,
-            "bstru": 100,
+            "bcent": 70,
+            "bstru": 65,
             "bland": 100,
-            "btrad": 0,
-        }
-    },
-    {
-        "name": "Capacitationism",
-        "stats": {
-            "bregu": 75,
-            "btech": 100,
-            "binte": 100,
-            "bince": 50,
-            "bcent": 40,
-            "bstru": 70,
-            "bland": 100,
-            "btrad": 0,
-        }
-    },
-    {
-        "name": "Nyuffdasha",
-        "stats": {
-            "bregu": 10,
-            "btech": 50,
-            "binte": 90,
-            "bince": 0,
-            "bcent": 10,
-            "bstru": 25,
-            "bland": 0,
-            "btrad": 10,
+            "btrad": 5,
         }
     }
 ];
