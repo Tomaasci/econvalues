@@ -63,5 +63,18 @@ ideologies = [
             "bland": 100,
             "btrad": 50,
         }
+    },
+    {
+        "name": "Conservatism",
+        "stats": {
+            "bregu": 50,
+            "btech": 25,
+            "binte": 20,
+            "bince": 20,
+            "bcent": 0,
+            "bstru": 50,
+            "bland": 95,
+            "btrad": 70,
+        }
     }
 ];
