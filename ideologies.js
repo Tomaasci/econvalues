@@ -37,5 +37,31 @@ ideologies = [
             "bland": 80,
             "btrad": 50,
         }
+    },
+    {
+        "name": "Council Communism",
+        "stats": {
+            "bregu": 90,
+            "btech": 70,
+            "binte": 25,
+            "bince": 80,
+            "bcent": 45,
+            "bstru": 90,
+            "bland": 90,
+            "btrad": 45,
+        }
+    },
+    {
+        "name": "Mutualism",
+        "stats": {
+            "bregu": 40,
+            "btech": 60,
+            "binte": 90,
+            "bince": 30,
+            "bcent": 0,
+            "bstru": 100,
+            "bland": 100,
+            "btrad": 50,
+        }
     }
 ];
