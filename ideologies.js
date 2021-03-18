@@ -24,5 +24,18 @@ ideologies = [
             "bland": 100,
             "btrad": 5,
         }
+    },
+    {
+        "name": "Marxism Leninism",
+        "stats": {
+            "bregu": 80,
+            "btech": 60,
+            "binte": 10,
+            "bince": 70,
+            "bcent": 90,
+            "bstru": 60,
+            "bland": 80,
+            "btrad": 50,
+        }
     }
 ];
