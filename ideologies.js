@@ -76,5 +76,31 @@ ideologies = [
             "bland": 95,
             "btrad": 70,
         }
+    },
+    {
+        "name": "Neoliberalism",
+        "stats": {
+            "bregu": 65,
+            "btech": 75,
+            "binte": 95,
+            "bince": 15,
+            "bcent": 50,
+            "bstru": 20,
+            "bland": 25,
+            "btrad": 0,
+        }
+    },
+    {
+        "name": "Social Democracy",
+        "stats": {
+            "bregu": 90,
+            "btech": 50,
+            "binte": 60,
+            "bince": 90,
+            "bcent": 50,
+            "bstru": 45,
+            "bland": 50,
+            "btrad": 50,
+        }
     }
 ];
