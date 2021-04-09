@@ -128,7 +128,7 @@ div.bar {
     padding: 8pt;
     margin-top: 4pt;
     margin-bottom: 4pt;
-    border-width: 8px;
+    border-width: 6px;
     border-right-width: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -144,13 +144,13 @@ div.text-wrapper {
     color: #000000;
     display: inline-block;
 }
-div.regu {
-    background-color: #79002c;
+div.unio {
+    background-color: #a00075;
     text-align: left;
     border-right-style: solid;
 }
-div.exte {
-    background-color: #603000;
+div.divi {
+    background-color: #2575e0;
     text-align: right;
     border-left-style: solid;
 }
@@ -169,8 +169,8 @@ div.dema {
     text-align: left;
     border-right-style: solid;
 }
-div.pate {
-    background-color: #ffa050;
+div.regu {
+    background-color: #79002c;
     text-align: right;
     border-left-style: solid;
 }
@@ -214,13 +214,13 @@ div.rent {
     text-align: right;
     border-left-style: solid;
 }
-div.prot {
-    background-color: #7575ff;
+div.birt {
+    background-color: #50a000;
     text-align: left;
     border-right-style: solid;
 }
-div.glob {
-    background-color: #00c0e0;
+div.meri {
+    background-color: #e0c000;
     text-align: right;
     border-left-style: solid;
 }
