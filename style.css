@@ -39,6 +39,7 @@ p.question {
     min-height: 144pt;
     background-color: #c0c0c0;
     padding: 16pt;
+    border: 6px solid #000000;
     border-radius: 16pt;
     font-size: 36pt;
     display: flex;
@@ -78,11 +79,12 @@ img.center {
     min-width: 500pt;
 }
 .button {
-    background-color: #00b5ff;
+    background-color: #00a0e0;
     font-family: 'Montserrat', sans-serif;
-    border: none;
+    font-weight: bold;
+    border: 6px solid #000000;
     border-radius: 8pt;
-    color: white;
+    color: #ffffff;
     padding: 8pt;
     width: 50%;
     min-width: 500pt;
@@ -94,11 +96,12 @@ img.center {
     cursor: pointer;
 }
 .small_button, .small_button_off {
-    background-color: #333;
+    background-color: #505050;
     font-family: 'Montserrat', sans-serif;
-    border: none;
+    font-weight: bold;
+    border: 6px solid #000000;
     border-radius: 8pt;
-    color: white;
+    color: #ffffff;
     padding: 8pt;
     width: 10%;
     min-width: 100pt;
@@ -110,9 +113,10 @@ img.center {
     cursor: pointer;
 }
 .small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    color: #505050;
+    border: 6px solid #000000;
     cursor: not-allowed;
     margin: -4px auto;
 }
@@ -144,23 +148,23 @@ div.text-wrapper {
     color: #000000;
     display: inline-block;
 }
-div.unio {
-    background-color: #a00075;
+div.equi {
+    background-color: #bc1643;
     text-align: left;
     border-right-style: solid;
 }
-div.divi {
-    background-color: #2575e0;
+div.comp {
+    background-color: #feff21;
     text-align: right;
     border-left-style: solid;
 }
-div.auto {
-    background-color: #a0a0c0;
+div.hori {
+    background-color: #f19112;
     text-align: left;
     border-right-style: solid;
 }
-div.empl {
-    background-color: #9040a0;
+div.hier {
+    background-color: #a52300;
     text-align: right;
     border-left-style: solid;
 }
@@ -174,16 +178,6 @@ div.regu {
     text-align: right;
     border-left-style: solid;
 }
-div.equi {
-    background-color: #bc1643;
-    text-align: left;
-    border-right-style: solid;
-}
-div.comp {
-    background-color: #feff21;
-    text-align: right;
-    border-left-style: solid;
-}
 div.cent {
     background-color: #26366d;
     text-align: left;
@@ -194,13 +188,13 @@ div.loca {
     text-align: right;
     border-left-style: solid;
 }
-div.hori {
-    background-color: #f19112;
+div.auto {
+    background-color: #a0a0c0;
     text-align: left;
     border-right-style: solid;
 }
-div.hier {
-    background-color: #a52300;
+div.empl {
+    background-color: #c05050;
     text-align: right;
     border-left-style: solid;
 }
@@ -215,12 +209,22 @@ div.rent {
     border-left-style: solid;
 }
 div.birt {
-    background-color: #50a000;
+    background-color: #75c0ff;
     text-align: left;
     border-right-style: solid;
 }
 div.meri {
     background-color: #e0c000;
+    text-align: right;
+    border-left-style: solid;
+}
+div.unio {
+    background-color: #a00075;
+    text-align: left;
+    border-right-style: solid;
+}
+div.divi {
+    background-color: #2575e0;
     text-align: right;
     border-left-style: solid;
 }
