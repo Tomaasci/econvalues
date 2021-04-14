@@ -103,14 +103,14 @@
         }
     }
 
-    binceArray = ["Egalitarian","Equal","Fair","Neutral","Competitive","Rugged","Meritocratic"]
+    binceArray = ["Egalitarian","Equal","Redistributed","Neutral","Competitive","Rugged","Darwinist"]
     bstruArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
-    binteArray = ["Laissez Faire","Free Market","Permissive","Neutral","Adjusted","Intervening","Paternalistic"]
-    bcentArray = ["Centralised","Concentrated","Unified","Neutral","Dispersed","Decentralised","Localised"]
-    btechArray = ["Cybernetic","Automated","Streamlined","Neutral","Manual","Blue Collar","Luddite"]
+    binteArray = ["Laissez Faire","Free Market","Permissive","Neutral","Regulatory","Directing","Planning"]
+    bcentArray = ["Command","Centralised","Unified","Neutral","Disunited","Dispersed","Decentralised"]
+    btechArray = ["Cybernetic","Automated","Industrialised","Neutral","Blue Collar","Manual","Luddite"]
     blandArray = ["Common Land","Georgism","Anti Rent","Neutral","Tenure","Landed","Propertarian"]
-    binheArray = ["Birthright 3","Birthright 2","Birthright 1","Neutral","Merit 1","Merit 2","Merit 3"]
-    blaboArray = ["Unionized 3","Unionized 2","Unionized 1","Neutral","Divided 1","Divided 2","Divided 3"]
+    binheArray = ["Caste","Aristocratic","Privilege","Neutral","Mobility","Opportunity","Meritocratic"]
+    blaboArray = ["Syndicalist","Trade Unionist","Pro-Union","Neutral","Anti-Union","Union Buster","Pinkerton"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -236,46 +236,46 @@
         ctx.drawImage(img, 680, 1010, 100, 100)
 
         ctx.fillStyle="#000000"
-        ctx.fillRect(120, 180, 560, 80)
-        ctx.fillRect(120, 300, 560, 80)
-        ctx.fillRect(120, 420, 560, 80)
-        ctx.fillRect(120, 540, 560, 80)
-        ctx.fillRect(120, 660, 560, 80)
-        ctx.fillRect(120, 780, 560, 80)
-        ctx.fillRect(120, 900, 560, 80)
-        ctx.fillRect(120, 1020, 560, 80)
+        ctx.fillRect(120, 180, 560, 70)
+        ctx.fillRect(120, 300, 560, 70)
+        ctx.fillRect(120, 420, 560, 70)
+        ctx.fillRect(120, 540, 560, 70)
+        ctx.fillRect(120, 660, 560, 70)
+        ctx.fillRect(120, 780, 560, 70)
+        ctx.fillRect(120, 900, 560, 70)
+        ctx.fillRect(120, 1020, 560, 70)
         ctx.fillStyle="#bc1643"
-        ctx.fillRect(120, 184, 5.6*equi-2, 72)
+        ctx.fillRect(120, 184, 5.6*equi-2, 60)
         ctx.fillStyle="#feff21"
-        ctx.fillRect(682-5.6*comp, 184, 5.6*comp-2, 72)
+        ctx.fillRect(682-5.6*comp, 184, 5.6*comp-2, 60)
         ctx.fillStyle="#f19112"
-        ctx.fillRect(120, 304, 5.6*hori-2, 72)
+        ctx.fillRect(120, 304, 5.6*hori-2, 60)
         ctx.fillStyle="#a52300"
-        ctx.fillRect(682-5.6*hier, 304, 5.6*hier-2, 72)
+        ctx.fillRect(682-5.6*hier, 304, 5.6*hier-2, 60)
         ctx.fillStyle="#f17a79"
-        ctx.fillRect(120, 424, 5.6*dema-2, 72)
+        ctx.fillRect(120, 424, 5.6*dema-2, 60)
         ctx.fillStyle="#79002c"
-        ctx.fillRect(682-5.6*regu, 424, 5.6*regu-2, 72)
+        ctx.fillRect(682-5.6*regu, 424, 5.6*regu-2, 60)
         ctx.fillStyle="#26366d"
-        ctx.fillRect(120, 544, 5.6*cent-2, 72)
+        ctx.fillRect(120, 544, 5.6*cent-2, 60)
         ctx.fillStyle="#eb6419"
-        ctx.fillRect(682-5.6*loca, 544, 5.6*loca-2, 72)
+        ctx.fillRect(682-5.6*loca, 544, 5.6*loca-2, 60)
         ctx.fillStyle="#a0a0c0"
-        ctx.fillRect(120, 664, 5.6*auto-2, 72)
+        ctx.fillRect(120, 664, 5.6*auto-2, 60)
         ctx.fillStyle="#c05050"
-        ctx.fillRect(682-5.6*empl, 664, 5.6*empl-2, 72)
+        ctx.fillRect(682-5.6*empl, 664, 5.6*empl-2, 60)
         ctx.fillStyle="#8a5d3c"
-        ctx.fillRect(120, 784, 5.6*comm-2, 72)
+        ctx.fillRect(120, 784, 5.6*comm-2, 60)
         ctx.fillStyle="#e30015"
-        ctx.fillRect(682-5.6*rent, 784, 5.6*rent-2, 72)
+        ctx.fillRect(682-5.6*rent, 784, 5.6*rent-2, 60)
         ctx.fillStyle="#75c0ff"
-        ctx.fillRect(120, 904, 5.6*birt-2, 72)
+        ctx.fillRect(120, 904, 5.6*birt-2, 60)
         ctx.fillStyle="#e0c000"
-        ctx.fillRect(682-5.6*meri, 904, 5.6*meri-2, 72)
+        ctx.fillRect(682-5.6*meri, 904, 5.6*meri-2, 60)
         ctx.fillStyle="#a00075"
-        ctx.fillRect(120, 1024, 5.6*unio-2, 72)
+        ctx.fillRect(120, 1024, 5.6*unio-2, 60)
         ctx.fillStyle="#2575e0"
-        ctx.fillRect(682-5.6*divi, 1024, 5.6*divi-2, 72)
+        ctx.fillRect(682-5.6*divi, 1024, 5.6*divi-2, 60)
         ctx.fillStyle="#000000"
         ctx.font="700 60px Montserrat"
         ctx.textAlign="left"
