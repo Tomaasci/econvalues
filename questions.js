@@ -104,7 +104,7 @@ questions = [
         }
     },
     {
-        "question": "Productivity is not as important than providing jobs.",
+        "question": "Productivity is not as important as providing jobs.",
         "effect": {
             "bince": 0,
             "bstru": 0,
