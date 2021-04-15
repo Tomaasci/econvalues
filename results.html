@@ -1,318 +1,1302 @@
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>EconValues Results</title>
-<link rel="icon" type="x-icon" href="econicon.png">
-<link rel="shortcut icon" type="x-icon" href="econicon.png">
-<meta charset="utf-8">
-<script>
-  version = "EconValues" //Remember to update this before making changes to the test itself!
-</script>
-</head>
-<script type="application/javascript"
-        src="ideologies.js">
-</script>
-
-<body>
-<img src="econvalues.png" class="center"></img>
-<hr>
-
-<h1>Results</h1>
-
-<h2>Incentive Axis : <span class="weight-300" id="bince"></span></h2>
-<div class="axis">
-    <img id="img-equi" src="value_images/equity.png" height="128pt"/>
-    <div class="bar equi" id="bar-equi"><div class="text-wrapper" id="equi"></div></div>
-    <div class="bar comp" id="bar-comp"><div class="text-wrapper" id="comp"></div></div>
-    <img id="img-comp" src="value_images/competition.png" height="128pt"/>
-</div>
-<h2>Structure Axis : <span class="weight-300" id="bstru"></span></h2>
-<div class="axis">
-    <img id="img-hori" src="value_images/horizontal.png" height="128pt"/>
-    <div class="bar hori" id="bar-hori"><div class="text-wrapper" id="hori"></div></div>
-    <div class="bar hier" id="bar-hier"><div class="text-wrapper" id="hier"></div></div>
-    <img id="img-hier" src="value_images/hierarchy.png" height="128pt"/>
-</div>
-<h2>Intervention Axis : <span class="weight-300" id="binte"></span></h2>
-<div class="axis">
-    <img id="img-dema" src="value_images/demand.png" height="128pt"/>
-    <div class="bar dema" id="bar-dema"><div class="text-wrapper" id="dema"></div></div>
-    <div class="bar regu" id="bar-regu"><div class="text-wrapper" id="regu"></div></div>
-    <img id="img-regu" src="value_images/regulation.png" height="128pt"/>
-</div>
-<h2>Centralisation Axis : <span class="weight-300" id="bcent"></span></h2>
-<div class="axis">
-    <img id="img-cent" src="value_images/central.png" height="128pt"/>
-    <div class="bar cent" id="bar-cent"><div class="text-wrapper" id="cent"></div></div>
-    <div class="bar loca" id="bar-loca"><div class="text-wrapper" id="loca"></div></div>
-    <img id="img-loca" src="value_images/local.png" height="128pt"/>
-</div>
-<h2>Technology Axis : <span class="weight-300" id="btech"></span></h2>
-<div class="axis">
-    <img id="img-auto" src="value_images/automation.png" height="128pt"/>
-    <div class="bar auto" id="bar-auto"><div class="text-wrapper" id="auto"></div></div>
-    <div class="bar empl" id="bar-empl"><div class="text-wrapper" id="empl"></div></div>
-    <img id="img-empl" src="value_images/employment.png" height="128pt"/>
-</div>
-<h2>Land Axis : <span class="weight-300" id="bland"></span></h2>
-<div class="axis">
-    <img id="img-comm" src="value_images/commons.png" height="128pt"/>
-    <div class="bar comm" id="bar-comm"><div class="text-wrapper" id="comm"></div></div>
-    <div class="bar rent" id="bar-rent"><div class="text-wrapper" id="rent"></div></div>
-    <img id="img-rent" src="value_images/rent.png" height="128pt"/>
-</div>
-<h2>Inherence Axis : <span class="weight-300" id="binhe"></span></h2>
-<div class="axis">
-    <img id="img-birt" src="value_images/birthright.png" height="128pt"/>
-    <div class="bar birt" id="bar-birt"><div class="text-wrapper" id="birt"></div></div>
-    <div class="bar meri" id="bar-meri"><div class="text-wrapper" id="meri"></div></div>
-    <img id="img-meri" src="value_images/merit.png" height="128pt"/>
-</div>
-<h2>Labor Axis : <span class="weight-300" id="blabo"></span></h2>
-<div class="axis">
-    <img id="img-unio" src="value_images/unionized.png" height="128pt"/>
-    <div class="bar unio" id="bar-unio"><div class="text-wrapper" id="unio"></div></div>
-    <div class="bar divi" id="bar-divi"><div class="text-wrapper" id="divi"></div></div>
-    <img id="img-divi" src="value_images/divided.png" height="128pt"/>
-</div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>There's no closest match for now, so cope with the axes lmao</p>
-<p>You think your results should be integrated into the closest matches ? Send them to me on Discord ( Quark#0741 ) or on Gmail ( beaulieu.renaud@gmail.com ) . </p>
-<hr/>
-<img src="" id="banner">
-<button class="button" onclick="location.href='index.html';" style="background-color: #00a0e0;">Back</button> <br>
-<script>
-    function getQueryVariable(variable)
+questions = [
     {
-           var query = window.location.search.substring(1)
-           var vars = query.split("&")
-           for (var i=0;i<vars.length;i++) {
-                   var pair = vars[i].split("=")
-                   if(pair[0] == variable) {return pair[1]}
-           }
-           return(NaN);
-    }
-
-    function setBarValue(name, value) {
-        innerel = document.getElementById(name)
-        outerel = document.getElementById("bar-" + name)
-        outerel.style.width = (value + "%")
-        innerel.innerHTML = (value + "%")
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
+        "question": "Co-operatives are better than traditional business models.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
         }
-    }
-
-    binceArray = ["Egalitarian","Equal","Redistributed","Neutral","Competitive","Rugged","Darwinist"]
-    bstruArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
-    binteArray = ["Laissez Faire","Free Market","Permissive","Neutral","Regulatory","Directing","Planning"]
-    bcentArray = ["Command","Centralised","Unified","Neutral","Disunited","Dispersed","Decentralised"]
-    btechArray = ["Cybernetic","Automated","Industrialised","Neutral","Blue Collar","Manual","Luddite"]
-    blandArray = ["Common Land","Georgism","Anti Rent","Neutral","Tenure","Landed","Propertarian"]
-    binheArray = ["Caste","Aristocratic","Privilege","Neutral","Mobility","Opportunity","Meritocratic"]
-    blaboArray = ["Syndicalist","Trade Unionist","Pro-Union","Neutral","Anti-Union","Union Buster","Pinkerton"]
-
-    function setLabel(val,ary) {
-        if (val > 100) { return "" } else
-        if (val > 85) { return ary[0] } else
-        if (val > 70) { return ary[1] } else
-        if (val > 55) { return ary[2] } else
-        if (val >= 45) { return ary[3] } else
-        if (val >= 30) { return ary[4] } else
-        if (val >= 15) { return ary[5] } else
-        if (val >= 0) { return ary[6] } else
-        	{return ""}
-    }
-
-    equi = getQueryVariable("equi")
-    hori = getQueryVariable("hori")
-    dema = getQueryVariable("dema")
-    cent = getQueryVariable("cent")
-    auto = getQueryVariable("auto")
-    comm = getQueryVariable("comm")
-    birt = getQueryVariable("birt")
-    unio = getQueryVariable("unio")
-    comp = (100 - equi).toFixed(1)
-    hier = (100 - hori).toFixed(1)
-    regu = (100 - dema).toFixed(1)
-    loca = (100 - cent).toFixed(1)
-    empl = (100 - auto).toFixed(1)
-    rent = (100 - comm).toFixed(1)
-    meri = (100 - birt).toFixed(1)
-    divi = (100 - unio).toFixed(1)
-
-    setBarValue("equi", equi)
-    setBarValue("comp", comp)
-    setBarValue("hori", hori)
-    setBarValue("hier", hier)
-    setBarValue("dema", dema)
-    setBarValue("regu", regu)
-    setBarValue("cent", cent)
-    setBarValue("loca", loca)
-    setBarValue("auto", auto)
-    setBarValue("empl", empl)
-    setBarValue("comm", comm)
-    setBarValue("rent", rent)
-    setBarValue("birt", birt)
-    setBarValue("meri", meri)
-    setBarValue("unio", unio)
-    setBarValue("divi", divi)
-
-    document.getElementById("bince").innerHTML = setLabel(equi, binceArray)
-    document.getElementById("bstru").innerHTML = setLabel(hori, bstruArray)
-    document.getElementById("binte").innerHTML = setLabel(dema, binteArray)
-    document.getElementById("bcent").innerHTML = setLabel(cent, bcentArray)
-    document.getElementById("btech").innerHTML = setLabel(auto, btechArray)
-    document.getElementById("bland").innerHTML = setLabel(comm, blandArray)
-    document.getElementById("binhe").innerHTML = setLabel(birt, binheArray)
-    document.getElementById("blabo").innerHTML = setLabel(unio, blaboArray)
-
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
-        dist = 0
-        dist += Math.abs(ideologies[i].stats.bince - equi)*1
-        dist += Math.abs(ideologies[i].stats.bstru - hori)*1
-        dist += Math.abs(ideologies[i].stats.binte - dema)*1
-        dist += Math.abs(ideologies[i].stats.bcent - cent)*1
-        dist += Math.abs(ideologies[i].stats.btech - auto)*1
-        dist += Math.abs(ideologies[i].stats.bland - comm)*1
-        dist += Math.abs(ideologies[i].stats.binhe - birt)*1
-        dist += Math.abs(ideologies[i].stats.blabo - unio)*1
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
+    },
+    {
+        "question": "We should pursue equality of outcome .",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
         }
-    }
-    document.getElementById("ideology-label").innerHTML = ideology
-
-    function createImage(src, x, y, w, h) {
-        img = new Image ()
-        img.src = src
-        img.onLoad = function() {
-            ctx.drawImage(img, x, y, w, h)
+    },
+    {
+        "question": "Land should not be taxed.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 0,
+            "blabo": 0,
         }
-    }
-
-    window.onload = function() {
-        var c = document.createElement("canvas")
-        var ctx = c.getContext("2d")
-        c.width = 800;
-        c.height = 1150;
-        ctx.fillStyle = "#c0c0c0"
-        ctx.fillRect(0,0,800,1150);
-
-        img = document.getElementById("img-equi")
-        ctx.drawImage(img, 20, 170, 100, 100)
-        img = document.getElementById("img-comp")
-        ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-hori")
-        ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-hier")
-        ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-dema")
-        ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-regu")
-        ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-cent")
-        ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-loca")
-        ctx.drawImage(img, 680, 530, 100, 100)
-        img = document.getElementById("img-auto")
-        ctx.drawImage(img, 20, 650, 100, 100)
-        img = document.getElementById("img-empl")
-        ctx.drawImage(img, 680, 650, 100, 100)
-        img = document.getElementById("img-comm")
-        ctx.drawImage(img, 20, 770, 100, 100);
-        img = document.getElementById("img-rent")
-        ctx.drawImage(img, 680, 770, 100, 100)
-        img = document.getElementById("img-birt")
-        ctx.drawImage(img, 20, 890, 100, 100)
-        img = document.getElementById("img-meri")
-        ctx.drawImage(img, 680, 890, 100, 100)
-        img = document.getElementById("img-unio")
-        ctx.drawImage(img, 20, 1010, 100, 100)
-        img = document.getElementById("img-divi")
-        ctx.drawImage(img, 680, 1010, 100, 100)
-
-        ctx.fillStyle="#000000"
-        ctx.fillRect(120, 185, 560, 70)
-        ctx.fillRect(120, 305, 560, 70)
-        ctx.fillRect(120, 425, 560, 70)
-        ctx.fillRect(120, 545, 560, 70)
-        ctx.fillRect(120, 665, 560, 70)
-        ctx.fillRect(120, 785, 560, 70)
-        ctx.fillRect(120, 905, 560, 70)
-        ctx.fillRect(120, 1025, 560, 70)
-        ctx.fillStyle="#bc1643"
-        ctx.fillRect(120, 189, 5.6*equi-2, 62)
-        ctx.fillStyle="#feff21"
-        ctx.fillRect(682-5.6*comp, 189, 5.6*comp-2, 62)
-        ctx.fillStyle="#f19112"
-        ctx.fillRect(120, 309, 5.6*hori-2, 62)
-        ctx.fillStyle="#a52300"
-        ctx.fillRect(682-5.6*hier, 309, 5.6*hier-2, 62)
-        ctx.fillStyle="#f17a79"
-        ctx.fillRect(120, 429, 5.6*dema-2, 62)
-        ctx.fillStyle="#79002c"
-        ctx.fillRect(682-5.6*regu, 429, 5.6*regu-2, 62)
-        ctx.fillStyle="#26366d"
-        ctx.fillRect(120, 549, 5.6*cent-2, 62)
-        ctx.fillStyle="#eb6419"
-        ctx.fillRect(682-5.6*loca, 549, 5.6*loca-2, 62)
-        ctx.fillStyle="#a0a0c0"
-        ctx.fillRect(120, 669, 5.6*auto-2, 62)
-        ctx.fillStyle="#c05050"
-        ctx.fillRect(682-5.6*empl, 669, 5.6*empl-2, 62)
-        ctx.fillStyle="#8a5d3c"
-        ctx.fillRect(120, 789, 5.6*comm-2, 62)
-        ctx.fillStyle="#e30015"
-        ctx.fillRect(682-5.6*rent, 789, 5.6*rent-2, 62)
-        ctx.fillStyle="#75c0ff"
-        ctx.fillRect(120, 909, 5.6*birt-2, 62)
-        ctx.fillStyle="#e0c000"
-        ctx.fillRect(682-5.6*meri, 909, 5.6*meri-2, 62)
-        ctx.fillStyle="#a00075"
-        ctx.fillRect(120, 1029, 5.6*unio-2, 62)
-        ctx.fillStyle="#2575e0"
-        ctx.fillRect(682-5.6*divi, 1029, 5.6*divi-2, 62)
-        ctx.fillStyle="#000000"
-        ctx.font="700 60px Montserrat"
-        ctx.textAlign="left"
-        ctx.fillText("EconValues", 20, 90)
-        ctx.font="40px Montserrat"
-        ctx.fillText(ideology, 20, 140)
-
-        ctx.textAlign="left"
-        if (equi > 30) {ctx.fillText(equi + "%", 130, 232.5)}
-        if (hori > 30) {ctx.fillText(hori + "%", 130, 352.5)}
-        if (dema > 30) {ctx.fillText(dema + "%", 130, 472.5)}
-        if (cent > 30) {ctx.fillText(cent + "%", 130, 592.5)}
-        if (auto > 30) {ctx.fillText(auto + "%", 130, 712.5)}
-        if (comm > 30) {ctx.fillText(comm + "%", 130, 832.5)}
-        if (birt > 30) {ctx.fillText(birt + "%", 130, 952.5)}
-        if (unio > 30) {ctx.fillText(unio + "%", 130, 1072.5)}
-        ctx.textAlign="right"
-        if (comp > 30) {ctx.fillText(comp + "%", 670, 232.5)}
-        if (hier > 30) {ctx.fillText(hier + "%", 670, 352.5)}
-        if (regu > 30) {ctx.fillText(regu + "%", 670, 472.5)}
-        if (loca > 30) {ctx.fillText(loca + "%", 670, 592.5)}
-        if (loca > 30) {ctx.fillText(empl + "%", 670, 712.5)}
-        if (rent > 30) {ctx.fillText(rent + "%", 670, 832.5)}
-        if (meri > 30) {ctx.fillText(meri + "%", 670, 952.5)}
-        if (divi > 30) {ctx.fillText(divi + "%", 670, 1072.5)}
-
-        ctx.textAlign="center"
-        ctx.fillText("Incentive Axis: " + document.getElementById("bince").innerHTML, 400, 175)
-        ctx.fillText("Structure Axis: " + document.getElementById("bstru").innerHTML, 400, 295)
-        ctx.fillText("Intervention Axis: " + document.getElementById("binte").innerHTML, 400, 415)
-        ctx.fillText("Centralisation Axis: " + document.getElementById("bcent").innerHTML, 400, 535)
-        ctx.fillText("Technology Axis: " + document.getElementById("btech").innerHTML, 400, 655)
-        ctx.fillText("Land Axis: " + document.getElementById("bland").innerHTML, 400, 775)
-        ctx.fillText("Inherence Axis: " + document.getElementById("binhe").innerHTML, 400, 895)
-        ctx.fillText("Labor Axis: " + document.getElementById("blabo").innerHTML, 400, 1015)
-
-        document.getElementById("banner").src = c.toDataURL();
-    }
-    </script>
-</body>
+    },
+    {
+        "question": "The hiring and firing of workers should not be down to the whims of bosses.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Private schools should be abolished.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Monopolies, including state monopolies, should be avoided at all costs.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Inherence and estate taxes are unethical.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Some level of inequality is necessary for society to function.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Productivity is not as important than providing jobs.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should consider implementing a land value tax.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "People should be economically deterred from spending their money on useless products.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "There should be no central bank.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Tax money should not fund the lifestyles of monarchs or aristocrats.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "A society without rulers is desirable.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should attempt to consume local products as much as possible.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The government and big businesses collude to stomp out small scale enterprises.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Union membership should never be part of an employment contract.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "The land belongs to the people.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The minimum wage should be abolished.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Workers should negotiate for wages independently not collectively.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "Workers should not be given too much autonomy or they’ll be lazy.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "All workplaces should be unionized.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "Slave labor is justified if it’s productive enough.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Price gouging during shortages is exploitative.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Repetitive work should be done by machines.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Hand made products are usually of a better quality than machine made alternatives.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Without property rights, there are no rights at all.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "If capitalism exists at all, it’s worst effects should be mitigated by welfare.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "A general strike could be used to improve society significantly.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "Some people are better suited to make economic decisions than others.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Rent is a form of theft.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Collective bargaining reduces the autonomy of an individual worker.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "Companies should not hire or fire people based on factors like race or gender.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Humans will always want to work.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "There should be no managers with authority over workers.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should intervene to reduce the production of harmful goods.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The economy should be centrally planned.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Consumerism has had a positive effect on modern economies.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Environmental regulations should be abolished.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Decentralised economies are inefficient.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Large scale organisations can increase efficiency.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Gambling should be legal.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Profits made by a company should be shared amongst its employees.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Strikes should be used to achieve better working conditions.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "When someone dies, their possessions and wealth rightfully belong to their next of kin.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should aim to achieve an automated economy as fast as possible.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Bosses usually know what’s best for their workers.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Education should be free and universal.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "An individual’s role in society should be inherited from their parents.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The right to own property is absolute.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Price fixing will lead to shortages.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "A flat tax is preferable to a progressive tax.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Some jobs should be reserved for people born into higher class families.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We must make sure everyone has enough to live, even if that negatively affects the economy.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Unions are not the solution to economic problems and can often make things worse.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "Healthcare should never be free.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Independent labor unions should not be allowed to exist.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "Workers should come together to form one big union.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "People who choose not to work should not expect support from society.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Prices should be determined by supply and demand.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "If someone is first to claim an area of land, they are entitled to profit from it.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Since machines work at a lower cost than humans, we should embrace them.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Taxes should be raised on the rich to provide for the poor.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should pursue equality of opportunity.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Nobody should profit from natural resources which they didn’t earn.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Certain services like roads and public transportation should be run by the state.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Top down structures for organisations work best.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Unemployment caused by technology can be a good thing, as people will have to work fewer hours.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Landlords provide an essential service.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "People have a right to occupy and use unused land, even if it’s owned by someone.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "In the future, all the work people don’t want to do will be mechanised.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The economy should be organised on the local level.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should try to achieve full employment.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Universal basic income is a good idea.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "There should be rules to prevent the common people acquiring wealth.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should direct the economy away from the production of luxuries.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Machines should be destroyed to prevent workers losing their jobs.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "What is produced should not be down to the whims of the market.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Organised labor should be used as the primary vehicle for political change.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "Government run industry is superior to existing alternatives.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Work makes people stronger.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Employment should be guaranteed.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": -1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Charities only help the weak and should be eliminated.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "People should not be allowed to trade human organs.",
+        "effect": {
+            "bince": 1,
+            "bstru": 0,
+            "binte": -1,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Intervention in the market is permissible to correct market failures.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The freer the market, the freer the people.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": -1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "A central AI should determine the allocation of resources.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 1,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Cryptocurrencies are superior to fiat currency.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Workers should have more of a say in the workplace.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "More people should aim to be self employed.",
+        "effect": {
+            "bince": 0,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "Anyone should have the opportunity to gain a position of authority.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "A stratified class system is desirable.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Inherited estate should be the basis for economic relations.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Landlords can be good when they allow people to save up to buy their own home.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": -1,
+            "binhe": -1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "Tenant unions are a good idea.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "Common ownership of land is preferable to common ownership of capital.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+    {
+        "question": "We should return to a feudal society.",
+        "effect": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 0,
+            "bcent": -1,
+            "btech": -1,
+            "bland": -1,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "We should attempt to establish socialism.",
+        "effect": {
+            "bince": 1,
+            "bstru": 1,
+            "binte": 0,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 1,
+            "binhe": 0,
+            "blabo": 1,
+        }
+    },
+    {
+        "question": "Capitalism has massively improved the world.",
+        "effect": {
+            "bince": -1,
+            "bstru": 0,
+            "binte": 1,
+            "bcent": 0,
+            "btech": 1,
+            "bland": 0,
+            "binhe": 1,
+            "blabo": 0,
+        }
+    },
+    {
+        "question": "The state should control all aspects of the economy.",
+        "effect": {
+            "bince": 0,
+            "bstru": -1,
+            "binte": -1,
+            "bcent": 1,
+            "btech": 0,
+            "bland": 0,
+            "binhe": 0,
+            "blabo": -1,
+        }
+    },
+];
