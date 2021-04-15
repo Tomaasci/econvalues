@@ -1282,7 +1282,7 @@ questions = [
             "bcent": 0,
             "btech": 1,
             "bland": 0,
-            "binhe": 1,
+            "binhe": -1,
             "blabo": 0,
         }
     },
