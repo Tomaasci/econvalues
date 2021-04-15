@@ -217,7 +217,7 @@ questions = [
             "btech": 0,
             "bland": 0,
             "binhe": 0,
-            "blabo": 1,
+            "blabo": -1,
         }
     },
     {
@@ -767,7 +767,7 @@ questions = [
         }
     },
     {
-        "question": "Prices should be determined supply and demand.",
+        "question": "Prices should be determined by supply and demand.",
         "effect": {
             "bince": 0,
             "bstru": 0,
@@ -1038,7 +1038,7 @@ questions = [
             "binhe": 0,
             "blabo": 0,
         }
-    },
+    }
     {
         "question": "Work makes people stronger.",
         "effect": {
