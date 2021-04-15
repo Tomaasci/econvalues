@@ -1038,7 +1038,7 @@ questions = [
             "binhe": 0,
             "blabo": 0,
         }
-    }
+    },
     {
         "question": "Work makes people stronger.",
         "effect": {
