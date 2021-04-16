@@ -37,5 +37,44 @@ ideologies = [
             "binhe": 10,
             "blabo": 40,
         }
+    },
+    {
+        "name": "Tripartism",
+        "stats": {
+            "bince": 60,
+            "bstru": 20,
+            "binte": 45,
+            "bcent": 80,
+            "btech": 30,
+            "bland": 40,
+            "binhe": 30,
+            "blabo": 90,
+        }
+    },
+    {
+        "name": "Mutualism",
+        "stats": {
+            "bince": 30,
+            "bstru": 100,
+            "binte": 100,
+            "bcent": 0,
+            "btech": 50,
+            "bland": 85,
+            "binhe": 30,
+            "blabo": 55,
+        }
+    },
+    {
+        "name": "Anarcho-Capitalism",
+        "stats": {
+            "bince": 0,
+            "bstru": 40,
+            "binte": 100,
+            "bcent": 0,
+            "btech": 70,
+            "bland": 10,
+            "binhe": 30,
+            "blabo": 40,
+        }
     }
 ];
