@@ -6,7 +6,7 @@
 <link rel="shortcut icon" type="x-icon" href="econicon.png">
 <meta charset="utf-8">
 <script>
-  version = "EconValues" //Remember to update this before making changes to the test itself!
+  version = ""
 </script>
 </head>
 <script type="application/javascript"
@@ -61,7 +61,7 @@
     <div class="bar rent" id="bar-rent"><div class="text-wrapper" id="rent"></div></div>
     <img id="img-rent" src="value_images/rent.png" height="128pt"/>
 </div>
-<h2>Inherence Axis : <span class="weight-300" id="binhe"></span></h2>
+<h2>Inheritance Axis : <span class="weight-300" id="binhe"></span></h2>
 <div class="axis">
     <img id="img-birt" src="value_images/birthright.png" height="128pt"/>
     <div class="bar birt" id="bar-birt"><div class="text-wrapper" id="birt"></div></div>
@@ -75,9 +75,9 @@
     <div class="bar divi" id="bar-divi"><div class="text-wrapper" id="divi"></div></div>
     <img id="img-divi" src="value_images/divided.png" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>There's no closest match for now, so cope with the axes lmao</p>
-<p>You think your results should be integrated into the closest matches ? Send them to me on Discord ( Quark#0741 ) or on Gmail ( beaulieu.renaud@gmail.com ) . </p>
+<h2>Closest Match : <span class="weight-300" id="ideology-match"></span> % <span class="weight-300" id="ideology-label"></span></h2>
+<p>The closest match is currently a work in progress.</p>
+<p>If you have any suggestions, send them to Quark#0741 on Discord or beaulieu.renaud@gmail.com on Gmail.</p>
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #00a0e0;">Back</button> <br>
@@ -182,10 +182,11 @@
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
-            ideomatch = 100-100*(ideodist/580)
+            ideomatch = Math.round(100-100*(ideodist/290))
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideology-match").innerHTML = ideomatch
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -200,8 +201,8 @@
         var ctx = c.getContext("2d")
         c.width = 800;
         c.height = 1150;
-        ctx.fillStyle = "#c0c0c0"
-        ctx.fillRect(0,0,800,1150);
+        ctx.fillStyle = "#a0a0a0"
+        ctx.fillRect(0,0,800,1125);
 
         img = document.getElementById("img-equi")
         ctx.drawImage(img, 20, 170, 100, 100)
@@ -278,11 +279,11 @@
         ctx.fillStyle="#2575e0"
         ctx.fillRect(682-5.6*divi, 1029, 5.6*divi-2, 62)
         ctx.fillStyle="#000000"
-        ctx.font="700 60px Montserrat"
+        ctx.font="700 50px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("EconValues", 20, 90)
-        ctx.font="40px Montserrat"
-        ctx.fillText(ideology, 20, 140)
+        ctx.fillText("EconValues", 20, 50)
+        ctx.font="30px Montserrat"
+        ctx.fillText(ideomatch, " % ", ideology, 20, 100)
 
         ctx.textAlign="left"
         if (equi >= 25) {ctx.fillText(equi + "%", 130, 232.5)}
@@ -303,6 +304,9 @@
         if (meri >= 25) {ctx.fillText(meri + "%", 670, 952.5)}
         if (divi >= 25) {ctx.fillText(divi + "%", 670, 1072.5)}
 
+        ctx.font="300 20px Montserrat"
+        ctx.fillText("econvalues.github.io", 780, 20)
+		ctx.fillText("Made by Solar#5896", 780, 50)
         ctx.textAlign="center"
         ctx.fillText("Incentive Axis: " + document.getElementById("bince").innerHTML, 400, 175)
         ctx.fillText("Structure Axis: " + document.getElementById("bstru").innerHTML, 400, 295)
@@ -310,7 +314,7 @@
         ctx.fillText("Centralisation Axis: " + document.getElementById("bcent").innerHTML, 400, 535)
         ctx.fillText("Technology Axis: " + document.getElementById("btech").innerHTML, 400, 655)
         ctx.fillText("Land Axis: " + document.getElementById("bland").innerHTML, 400, 775)
-        ctx.fillText("Inherence Axis: " + document.getElementById("binhe").innerHTML, 400, 895)
+        ctx.fillText("Inheritance Axis: " + document.getElementById("binhe").innerHTML, 400, 895)
         ctx.fillText("Labor Axis: " + document.getElementById("blabo").innerHTML, 400, 1015)
 
         document.getElementById("banner").src = c.toDataURL();
