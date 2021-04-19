@@ -96,7 +96,7 @@ ideologies = [
             "bince": 50,
             "bstru": 0,
             "binte": 30,
-            "bcent": 100,
+            "bcent": 90,
             "btech": 60,
             "bland": 40,
             "binhe": 25,
@@ -355,8 +355,8 @@ ideologies = [
         "stats": {
             "bince": 30,
             "bstru": 20,
-            "binte": 30,
-            "bcent": 80,
+            "binte": 40,
+            "bcent": 100,
             "btech": 60,
             "bland": 50,
             "binhe": 30,
@@ -387,6 +387,188 @@ ideologies = [
             "bland": 70,
             "binhe": 0,
             "blabo": 50,
+        }
+    },
+    {
+        "name": "Marxism",
+        "stats": {
+            "bince": 90,
+            "bstru": 80,
+            "binte": 20,
+            "bcent": 60,
+            "btech": 45,
+            "bland": 85,
+            "binhe": 0,
+            "blabo": 70,
+        }
+    },
+    {
+        "name": "Autonomism",
+        "stats": {
+            "bince": 90,
+            "bstru": 100,
+            "binte": 25,
+            "bcent": 30,
+            "btech": 50,
+            "bland": 85,
+            "binhe": 0,
+            "blabo": 40,
+        }
+    },
+    {
+        "name": "Agrarian Socialism",
+        "stats": {
+            "bince": 90,
+            "bstru": 80,
+            "binte": 20,
+            "bcent": 10,
+            "btech": 0,
+            "bland": 85,
+            "binhe": 20,
+            "blabo": 50,
+        }
+    },
+    {
+        "name": "Reactionary Socialism",
+        "stats": {
+            "bince": 70,
+            "bstru": 50,
+            "binte": 50,
+            "bcent": 0,
+            "btech": 0,
+            "bland": 80,
+            "binhe": 70,
+            "blabo": 45,
+        }
+    },
+    {
+        "name": "Caste System",
+        "stats": {
+            "bince": 20,
+            "bstru": 0,
+            "binte": 30,
+            "bcent": 80,
+            "btech": 40,
+            "bland": 20,
+            "binhe": 100,
+            "blabo": 20,
+        }
+    },
+    {
+        "name": "Technocapitalism",
+        "stats": {
+            "bince": 20,
+            "bstru": 35,
+            "binte": 80,
+            "bcent": 50,
+            "btech": 100,
+            "bland": 20,
+            "binhe": 20,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "Technofeudalism",
+        "stats": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 80,
+            "bcent": 70,
+            "btech": 100,
+            "bland": 10,
+            "binhe": 100,
+            "blabo": 0,
+        }
+    },
+    {
+        "name": "Crypto-Anarchism",
+        "stats": {
+            "bince": 10,
+            "bstru": 70,
+            "binte": 100,
+            "bcent": 0,
+            "btech": 100,
+            "bland": 60,
+            "binhe": 20,
+            "blabo": 45,
+        }
+    },
+    {
+        "name": "Techno Utopianism",
+        "stats": {
+            "bince": 30,
+            "bstru": 60,
+            "binte": 100,
+            "bcent": 30,
+            "btech": 100,
+            "bland": 50,
+            "binhe": 0,
+            "blabo": 45,
+        }
+    },
+    {
+        "name": "Left Rothbardianism",
+        "stats": {
+            "bince": 0,
+            "bstru": 90,
+            "binte": 100,
+            "bcent": 0,
+            "btech": 70,
+            "bland": 10,
+            "binhe": 25,
+            "blabo": 50,
+        }
+    },
+    {
+        "name": "Dengism",
+        "stats": {
+            "bince": 20,
+            "bstru": 15,
+            "binte": 50,
+            "bcent": 90,
+            "btech": 80,
+            "bland": 40,
+            "binhe": 0,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "Market Anarchism",
+        "stats": {
+            "bince": 10,
+            "bstru": 100,
+            "binte": 100,
+            "bcent": 0,
+            "btech": 70,
+            "bland": 60,
+            "binhe": 15,
+            "blabo": 60,
+        }
+    },
+    {
+        "name": "Ordoliberalism",
+        "stats": {
+            "bince": 30,
+            "bstru": 20,
+            "binte": 85,
+            "bcent": 70,
+            "btech": 70,
+            "bland": 35,
+            "binhe": 10,
+            "blabo": 25,
+        }
+    },
+    {
+        "name": "Modern Liberalism",
+        "stats": {
+            "bince": 65,
+            "bstru": 40,
+            "binte": 60,
+            "bcent": 60,
+            "btech": 50,
+            "bland": 35,
+            "binhe": 10,
+            "blabo": 60,
         }
     }
 ];
