@@ -182,9 +182,11 @@
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
+            ideomatch = 100-100*(ideodist/580)
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideology-match").innerHTML = ideomatch
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
