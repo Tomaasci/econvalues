@@ -75,7 +75,7 @@
     <div class="bar divi" id="bar-divi"><div class="text-wrapper" id="divi"></div></div>
     <img id="img-divi" src="value_images/divided.png" height="128pt"/>
 </div>
-<h2>Closest Match : <span class="weight-300" id="ideology-match"></span> % <span class="weight-300" id="ideology-label"></span></h2>
+<h2>Closest Match : <span class="weight-300" id="ideology-label"></span></h2>
 <p>The closest match is currently a work in progress.</p>
 <p>If you have any suggestions, send them to Quark#0741 on Discord or beaulieu.renaud@gmail.com on Gmail.</p>
 <hr/>
@@ -283,7 +283,7 @@
         ctx.textAlign="left"
         ctx.fillText("EconValues", 20, 70)
         ctx.font="30px Montserrat"
-        ctx.fillText(ideomatch + " % " + ideology, 20, 120)
+        ctx.fillText(ideology, 20, 120)
 
         ctx.textAlign="left"
         if (equi >= 25) {ctx.fillText(equi + "%", 130, 232.5)}
