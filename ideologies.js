@@ -570,5 +570,135 @@ ideologies = [
             "binhe": 10,
             "blabo": 60,
         }
+    },
+    {
+        "name": "Corporate Statism",
+        "stats": {
+            "bince": 50,
+            "bstru": 10,
+            "binte": 30,
+            "bcent": 100,
+            "btech": 50,
+            "bland": 40,
+            "binhe": 35,
+            "blabo": 80,
+        }
+    },
+    {
+        "name": "Geo-Syndicalism",
+        "stats": {
+            "bince": 40,
+            "bstru": 70,
+            "binte": 90,
+            "bcent": 35,
+            "btech": 50,
+            "bland": 100,
+            "binhe": 20,
+            "blabo": 100,
+        }
+    },
+    {
+        "name": "Progressive Utilization Theory",
+        "stats": {
+            "bince": 100,
+            "bstru": 20,
+            "binte": 70,
+            "bcent": 90,
+            "btech": 45,
+            "bland": 70,
+            "binhe": 60,
+            "blabo": 40,
+        }
+    },
+    {
+        "name": "Pinochetism",
+        "stats": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 100,
+            "bcent": 40,
+            "btech": 60,
+            "bland": 0,
+            "binhe": 50,
+            "blabo": 0,
+        }
+    },
+    {
+        "name": "Social Credit",
+        "stats": {
+            "bince": 60,
+            "bstru": 40,
+            "binte": 90,
+            "bcent": 30,
+            "btech": 100,
+            "bland": 50,
+            "binhe": 10,
+            "blabo": 40,
+        }
+    },
+    {
+        "name": "Social Georgism",
+        "stats": {
+            "bince": 90,
+            "bstru": 50,
+            "binte": 85,
+            "bcent": 50,
+            "btech": 70,
+            "bland": 100,
+            "binhe": 20,
+            "blabo": 60,
+        }
+    },
+    {
+        "name": "Social Distributism",
+        "stats": {
+            "bince": 90,
+            "bstru": 70,
+            "binte": 45,
+            "bcent": 10,
+            "btech": 25,
+            "bland": 55,
+            "binhe": 45,
+            "blabo": 55,
+        }
+    },
+    {
+        "name": "Social Corporatism",
+        "stats": {
+            "bince": 90,
+            "bstru": 30,
+            "binte": 45,
+            "bcent": 80,
+            "btech": 30,
+            "bland": 40,
+            "binhe": 25,
+            "blabo": 90,
+        }
+    },
+    {
+        "name": "De Leonism",
+        "stats": {
+            "bince": 90,
+            "bstru": 100,
+            "binte": 30,
+            "bcent": 45,
+            "btech": 45,
+            "bland": 100,
+            "binhe": 10,
+            "blabo": 100,
+        }
+    },
+    {
+        "name": "Council Communism",
+        "stats": {
+            "bince": 90,
+            "bstru": 80,
+            "binte": 25,
+            "bcent": 20,
+            "btech": 45,
+            "bland": 85,
+            "binhe": 0,
+            "blabo": 60,
+        }
     }
 ];
