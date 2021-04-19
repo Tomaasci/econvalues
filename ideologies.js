@@ -546,16 +546,16 @@ ideologies = [
         }
     },
     {
-        "name": "Ordoliberalism",
+        "name": "Ordo-Liberalism",
         "stats": {
-            "bince": 30,
-            "bstru": 20,
-            "binte": 85,
+            "bince": 50,
+            "bstru": 30,
+            "binte": 60,
             "bcent": 70,
-            "btech": 70,
-            "bland": 35,
-            "binhe": 10,
-            "blabo": 25,
+            "btech": 75,
+            "bland": 30,
+            "binhe": 20,
+            "blabo": 35,
         }
     },
     {
@@ -565,7 +565,7 @@ ideologies = [
             "bstru": 40,
             "binte": 60,
             "bcent": 60,
-            "btech": 50,
+            "btech": 75,
             "bland": 35,
             "binhe": 10,
             "blabo": 60,
