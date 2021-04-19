@@ -13,7 +13,7 @@ questions = [
         }
     },
     {
-        "question": "We should pursue equality of outcome .",
+        "question": "We should pursue equality of outcome.",
         "effect": {
             "bince": 1,
             "bstru": 0,
@@ -78,7 +78,7 @@ questions = [
         }
     },
     {
-        "question": "Inherence and estate taxes are unethical.",
+        "question": "Inheritance and estate taxes are unethical.",
         "effect": {
             "bince": 0,
             "bstru": 0,
