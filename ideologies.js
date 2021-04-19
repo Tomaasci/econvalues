@@ -219,5 +219,174 @@ ideologies = [
             "binhe": 100,
             "blabo": 20,
         }
+    },
+    {
+        "name": "Geo-Libertarianism",
+        "stats": {
+            "bince": 30,
+            "bstru": 60,
+            "binte": 100,
+            "bcent": 10,
+            "btech": 60,
+            "bland": 100,
+            "binhe": 30,
+            "blabo": 50,
+        }
+    },
+    {
+        "name": "Market Socialism",
+        "stats": {
+            "bince": 60,
+            "bstru": 90,
+            "binte": 80,
+            "bcent": 45,
+            "btech": 65,
+            "bland": 90,
+            "binhe": 10,
+            "blabo": 70,
+        }
+    },
+    {
+        "name": "Lange Model",
+        "stats": {
+            "bince": 70,
+            "bstru": 75,
+            "binte": 80,
+            "bcent": 100,
+            "btech": 70,
+            "bland": 90,
+            "binhe": 10,
+            "blabo": 60,
+        }
+    },
+    {
+        "name": "Cameralism",
+        "stats": {
+            "bince": 30,
+            "bstru": 0,
+            "binte": 30,
+            "bcent": 90,
+            "btech": 40,
+            "bland": 20,
+            "binhe": 90,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "Social Libertarianism",
+        "stats": {
+            "bince": 60,
+            "bstru": 50,
+            "binte": 90,
+            "bcent": 30,
+            "btech": 70,
+            "bland": 50,
+            "binhe": 10,
+            "blabo": 50,
+        }
+    },
+    {
+        "name": "Luxury Communism",
+        "stats": {
+            "bince": 100,
+            "bstru": 70,
+            "binte": 50,
+            "bcent": 100,
+            "btech": 100,
+            "bland": 80,
+            "binhe": 0,
+            "blabo": 60,
+        }
+    },
+    {
+        "name": "Laissez-Faire Capitalism",
+        "stats": {
+            "bince": 10,
+            "bstru": 35,
+            "binte": 100,
+            "bcent": 20,
+            "btech": 75,
+            "bland": 15,
+            "binhe": 35,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "Toryism",
+        "stats": {
+            "bince": 0,
+            "bstru": 20,
+            "binte": 20,
+            "bcent": 50,
+            "btech": 35,
+            "bland": 80,
+            "binhe": 0,
+            "blabo": 10,
+        }
+    },
+    {
+        "name": "Social Darwinism",
+        "stats": {
+            "bince": 0,
+            "bstru": 0,
+            "binte": 100,
+            "bcent": 20,
+            "btech": 50,
+            "bland": 0,
+            "binhe": 50,
+            "blabo": 0,
+        }
+    },
+    {
+        "name": "Paternalism",
+        "stats": {
+            "bince": 60,
+            "bstru": 20,
+            "binte": 0,
+            "bcent": 60,
+            "btech": 50,
+            "bland": 40,
+            "binhe": 60,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "State Capitalism",
+        "stats": {
+            "bince": 30,
+            "bstru": 20,
+            "binte": 30,
+            "bcent": 80,
+            "btech": 60,
+            "bland": 50,
+            "binhe": 30,
+            "blabo": 0,
+        }
+    },
+    {
+        "name": "Meritocratic Capitalism",
+        "stats": {
+            "bince": 0,
+            "bstru": 20,
+            "binte": 80,
+            "bcent": 30,
+            "btech": 70,
+            "bland": 30,
+            "binhe": 0,
+            "blabo": 30,
+        }
+    },
+    {
+        "name": "Technocracy",
+        "stats": {
+            "bince": 50,
+            "bstru": 70,
+            "binte": 30,
+            "bcent": 100,
+            "btech": 100,
+            "bland": 70,
+            "binhe": 0,
+            "blabo": 50,
+        }
     }
 ];
