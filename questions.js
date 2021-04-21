@@ -286,7 +286,7 @@ questions = [
         }
     },
     {
-        "question": "Slave labor is justified if it’s productive enough.",
+        "question": "Slave labor is justified if its productive enough.",
         "effect": {
             "bince": 0,
             "bstru": -1,
