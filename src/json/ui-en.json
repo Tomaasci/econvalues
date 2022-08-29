@@ -7,13 +7,13 @@
                 "name": "Levelled",
                 "color": "#ff0040",
                 "icon": "./assets/icons/levelled.svg",
-                "blurb": "Those with higher Levelled scores believe that ownership should be aquired through work. They tend to support common land ownership, unions, and socialism."
+                "blurb": "Those with higher Levelled scores ..."
             },
             "rightvalue": {
                 "name": "Stratified",
                 "color": "#4020ff",
                 "icon": "./assets/icons/stratified.svg",
-                "blurb": "Those with higher Stratified scores believe that ownership should be aquired through claims. They tend to support landlords, wage labor, and class systems."
+                "blurb": "Those with higher Stratified scores ..."
             }
         },
         {
@@ -22,13 +22,13 @@
                 "name": "Usage",
                 "color": "#e06000",
                 "icon": "./assets/icons/usage.svg",
-                "blurb": "Those with higher Usage scores believe that resources and production should be focused on needs. They tend to support regulation, high taxation, and economic planning."
+                "blurb": "Those with higher Usage scores..."
             },
             "rightvalue": {
                 "name": "Rent",
                 "color": "#00ff40",
                 "icon": "./assets/icons/rent.svg",
-                "blurb": "Those with higher Rent scores believe that free markets are the best way to distribute resources. They tend to support deregulation, low taxes, and laissez-faire."
+                "blurb": "Those with higher Rent scores ..."
             }
         },
         {
@@ -37,13 +37,13 @@
                 "name": "Needs",
                 "color": "#a000c0",
                 "icon": "./assets/icons/needs.svg",
-                "blurb": "Those with higher Needs scores believe that political power should be centralized in the hands of few. They tend to support strong governments, centralism, and autocracy."
+                "blurb": "Those with higher Needs scores ..."
             },
             "rightvalue": {
                 "name": "Demand",
                 "color": "#ffe000",
                 "icon": "./assets/icons/demand.svg",
-                "blurb": "Those with higher Demand scores believe that political power should be spread amongst the population. They tend to support small governments, localism, and anarchism."
+                "blurb": "Those with higher Demand scores ..."
             }
         },
         {
@@ -52,13 +52,13 @@
                 "name": "Central",
                 "color": "#00c080",
                 "icon": "./assets/icons/central.svg",
-                "blurb": "Those with higher Central scores believe an individual should be able to act as they please if they aren't harming others. They tend to support free speech, bodily autonomy, and individualism."
+                "blurb": "Those with higher Central scores ..."
             },
             "rightvalue": {
                 "name": "Local",
                 "color": "#ff2000",
                 "icon": "./assets/icons/local.svg",
-                "blurb": "Those with higher Local scores believe that strict rules should be put in place to limit what an individual may do. They tend to support limitations on speech, paternalistic social policy, and collectivism."
+                "blurb": "Those with higher Local scores ..."
             }
         },
         {
@@ -67,13 +67,13 @@
                 "name": "Automated",
                 "color": "#ff40c0",
                 "icon": "./assets/icons/automated.svg",
-                "blurb": "Those with higher Automated scores believe that identity groups in society should be treated equally. They tend to support LGBT+ acceptance, feminism, and racial levelled."
+                "blurb": "Those with higher Automated scores ..."
             },
             "rightvalue": {
                 "name": "Employed",
                 "color": "#00a000",
                 "icon": "./assets/icons/employed.svg",
-                "blurb": "Those with higher Employed scores tend to believe that identity groups are stratified and more or less valuable. They tend to support sexual norms, gender roles, and racial nationalism."
+                "blurb": "Those with higher Employed scores ..."
             }
         },
         {
@@ -82,13 +82,13 @@
                 "name": "National",
                 "color": "#ffa000",
                 "icon": "./assets/icons/national.svg",
-                "blurb": "Those with higher National scores believe that rapid change is risky and that the past should be cherished. They tend to support religion, nature, and preserving culture."
+                "blurb": "Those with higher National scores ..."
             },
             "rightvalue": {
                 "name": "Global",
                 "color": "#0080ff",
                 "icon": "./assets/icons/global.svg",
-                "blurb": "Those with higher Global scores believe that holding on to the past is irrational and instead we should look to the future. They tend to support secularism, transhumanism, and rewriting culture."
+                "blurb": "Those with higher Global scores ..."
             }
         }
     ],
