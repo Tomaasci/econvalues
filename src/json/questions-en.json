@@ -1,12 +1,67 @@
 [
     {
-        "text": "Something",
+        "text": "1st test",
         "effect": [
             1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "text": "2nd test",
+        "effect": [
+            0,
             1,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "text": "3rd test",
+        "effect": [
+            0,
+            0,
             1,
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "text": "4th test",
+        "effect": [
+            0,
+            0,
+            0,
             1,
+            0,
+            0
+        ]
+    },
+    {
+        "text": "5th test",
+        "effect": [
+            0,
+            0,
+            0,
+            0,
             1,
+            0
+        ]
+    },
+    {
+        "text": "6th test",
+        "effect": [
+            0,
+            0,
+            0,
+            0,
+            0,
             1
         ]
     }
