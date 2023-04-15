@@ -1,6 +1,6 @@
 [
     {
-        "text": "1st test",
+        "text": "First test",
         "effect": [
             1,
             0,
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "text": "2nd test",
+        "text": "Second test",
         "effect": [
             0,
             1,
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "text": "3rd test",
+        "text": "Third test",
         "effect": [
             0,
             0,
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "text": "4th test",
+        "text": "Fourth test",
         "effect": [
             0,
             0,
@@ -44,7 +44,7 @@
         ]
     },
     {
-        "text": "5th test",
+        "text": "Fifth test",
         "effect": [
             0,
             0,
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "text": "6th test",
+        "text": "Sixth test",
         "effect": [
             0,
             0,
